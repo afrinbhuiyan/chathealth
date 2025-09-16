@@ -7,7 +7,7 @@ interface ToggleSwitchProps {
   onChange?: (checked: boolean) => void;
 }
 
-const ToggleSwitch: FC<ToggleSwitchProps> = ({ checked = false, onChange }) => {
+const ToggleSwitch: FC<ToggleSwitchProps> = ({ checked = true, onChange }) => {
   const [isChecked, setIsChecked] = useState(checked);
 
   const handleToggle = () => {
@@ -17,11 +17,17 @@ const ToggleSwitch: FC<ToggleSwitchProps> = ({ checked = false, onChange }) => {
 
   return (
     <div
-      className="relative w-sm h-[50px] bg-gray-100 rounded-full cursor-pointer flex items-center border border-black"
       onClick={handleToggle}
+      className="relative w-sm h-[50px] bg-gray-100 rounded-full cursor-pointer flex items-center border border-black"
     >
-      <span className="absolute left-8 text-gray-800 font-medium">Text Mode</span>
-      <span className="absolute right-8 text-gray-800 font-medium">Voice Mode</span>
+      {/* Left and right labels */}
+      <span className="absolute left-8 text-gray-800 font-medium">
+        Text Mode
+      </span>
+      <span className="absolute right-8 text-gray-800 font-medium">
+        Voice Mode
+      </span>
+
       {/* Slider */}
       <div
         className={`absolute left-0 w-[calc(50%-8px)] mx-2 h-[80%] bg-black rounded-full flex items-center justify-center text-white font-medium transition-transform duration-300 ${

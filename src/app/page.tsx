@@ -7,7 +7,8 @@ import ToggleSwitch from "@/components/ui/ToggleSwitch";
 import { useState } from "react";
 
 export default function Home() {
-  const [isVoiceMode, setIsVoiceMode] = useState(false);
+  // Start with Voice Mode
+  const [isVoiceMode, setIsVoiceMode] = useState(true);
 
   return (
     <div className="min-h-screen relative bg-gray-100 px-14">
