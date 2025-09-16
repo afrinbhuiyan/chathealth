@@ -1,6 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ChatHealth
 
-## Getting Started
+This project is built using **Next.js**, **TypeScript**, and **Shadcn**.  
+The UI is based on the provided Figma design.
+
+---
+
+## 🚀 Getting Started
 
 First, run the development server:
 
@@ -14,23 +19,57 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Project Structure (suggested)
 
-## Learn More
+- `app/` → Next.js App Router pages and layouts  
+- `src/components/` → Reusable UI components (Navbar, ChatWindow, etc.)  
+- `public/` → Images and static assets  
+- `styles/` → Global styles / Tailwind config  
+- `tsconfig.json`, `package.json`, etc.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Responsive UI (designed to fit screen sizes without vertical scroll)  
+- Navbar  
+- Text Chat page layout  
+- Voice Chat page layout
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⏱ Development Time Log
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Project Setup (Next.js + TypeScript + Shadcn):** ~10 mins  
+- **Navbar Component:** ~20 mins  
+- **Text Chat Page Layout:** ~2 hrs  
+- **Voice Chat Page Layout:** ~1 hr  
+- **Responsive Adjustments:** ~35 mins  
+- **Final Review & Testing:** ~20 mins
+
+**Total:** ~4 hrs 15 mins
+
+---
+
+## ✅ Notes
+
+- The implementation follows the Figma design where applicable. If a UI element (e.g., a sidebar or toggle) was not present in the Figma file, it was not added unless required.
+- Chat logic (real-time messaging, backend, AI integration) was not requested and is not implemented. This repo demonstrates UI fidelity and responsiveness using Next.js, TypeScript, and Shadcn.
+- Mobile chat layout decisions were implemented based on best-practice responsive patterns.
+
+---
+
+## 🙋‍♂️ Contact / Demo
+
+- Repo: `https://github.com/afrinbhuiyan/chathealth`
+- If you'd like, I can add a demo GIF, deployment instructions, or a live Vercel link.
+
+---
+
+## 📜 License
+
+This project is available under the MIT License.
