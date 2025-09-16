@@ -1,7 +1,13 @@
-# ChatHealth
+# ChatHealth  
 
-This project is built using **Next.js**, **TypeScript**, and **Shadcn**.  
-The UI is based on the provided Figma design.
+[![Next.js](https://img.shields.io/badge/Next.js-13-black?style=flat-square&logo=nextdotjs)](https://nextjs.org/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)  
+[![Shadcn UI](https://img.shields.io/badge/Shadcn-UI-000?style=flat-square)](https://ui.shadcn.com/)  
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
+
+A **health-focused chat UI** built with **Next.js**, **TypeScript**, and **Shadcn**, based on the provided Figma design.  
+
+🌐 **Live Preview:** [chatly-ruby.vercel.app](https://chatly-ruby.vercel.app/)  
 
 ---
 
@@ -28,7 +34,6 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 - `app/` → Next.js App Router pages and layouts  
 - `src/components/` → Reusable UI components (Navbar, ChatWindow, etc.)  
 - `public/` → Images and static assets  
-- `styles/` → Global styles / Tailwind config  
 - `tsconfig.json`, `package.json`, etc.
 
 ---

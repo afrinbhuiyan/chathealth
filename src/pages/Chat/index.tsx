@@ -8,15 +8,15 @@ interface ChatProps {
 
 export default function Chat({ mode }: ChatProps) {
   return (
-    <div className="h-[70vh]">
+    <div className="h-[70vh] bg-white/10 border rounded-lg  border-white p-4">
       {" "}
       {mode === "text" ? (
         <div className="h-full max-w-4xl mx-auto bg-[#FDFDFD80] rounded-2xl px-4">
           <ChatWindow />{" "}
         </div>
       ) : (
-        <div className="p-4 rounded-lg bg-white/10 border border-white h-full">
-          <div className="h-full max-w-4xl mx-auto bg-[#FDFDFD80] rounded-2xl">
+        <div className="h-full">
+          <div className="h-full max-w-3xl mx-auto bg-[#E2E2E266] rounded-2xl">
             {" "}
             <ListeningScreen />
           </div>
